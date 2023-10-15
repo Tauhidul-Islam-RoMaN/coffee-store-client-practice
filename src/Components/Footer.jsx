@@ -24,13 +24,13 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className='flex gap-5 font-Raleway mx-auto md:mx-0  flex-col'>
-                            <div className='flex gap-5 mx-auto lg:mx-0 items-center text-xl'>
+                            <div className='flex gap-5 mx-auto lg:mx-0 items-center text-lg md:text-xl'>
                                 <IoIosCall></IoIosCall>  <p>+8801700-000000</p>
                             </div>
-                            <div className='flex gap-5 mx-auto lg:mx-0 items-center text-xl'>
+                            <div className='flex gap-5 mx-auto lg:mx-0 items-center text-lg md:text-xl'>
                                 <HiMail></HiMail>  <p>user@espressoemporium.com</p>
                             </div>
-                            <div className='flex gap-5 mx-auto lg:mx-0 items-center text-xl'>
+                            <div className='flex gap-5 mx-auto lg:mx-0 items-center text-lg md:text-xl'>
                                 <ImLocation2></ImLocation2> <p>72, Wall street, King Road, Dhaka</p>
                             </div>
                         </div>
