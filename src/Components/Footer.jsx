@@ -13,7 +13,7 @@ const Footer = () => {
                         <div className='mx-auto md:mx-0'>
                             <h5 className="mb-4 md:text-5xl text-3xl  font-Rancho">Espresso Emporium</h5>
 
-                            <p className="mb-4 font-Raleway">
+                            <p className="mb-4 md:mx-10 lg:mx-0 font-Raleway">
                                 Always ready to be your friend. Come & Contact with us to share your memorable moments, to share with your best companion.
                             </p>
                             <div>
