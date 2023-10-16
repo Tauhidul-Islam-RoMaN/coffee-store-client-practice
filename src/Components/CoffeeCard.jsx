@@ -11,7 +11,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
 
     const handleRemove = (_id) => {
         console.log(_id);
-        fetch(`http://localhost:5000/coffee/${_id}`, {
+        fetch(`https://coffee-store-server-practice-bseffra3o-romans-projects-caf8547b.vercel.app/coffee/${_id}`, {
             method: "DELETE"
         })
             .then(res => res.json())

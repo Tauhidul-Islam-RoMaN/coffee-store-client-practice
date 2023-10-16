@@ -16,7 +16,7 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader: () => fetch('http://localhost:5000/coffee')
+                loader: () => fetch('https://coffee-store-server-practice-bseffra3o-romans-projects-caf8547b.vercel.app/coffee')
             },
             {
                 path:'/addCoffee',
@@ -25,13 +25,13 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path:'/updateCoffee/:id',
                 element:<UpdateCoffee></UpdateCoffee>,
-                loader: ({params}) => fetch(`http://localhost:5000/updatedCoffee/${params.id}`)
+                loader: ({params}) => fetch(`https://coffee-store-server-practice-bseffra3o-romans-projects-caf8547b.vercel.app/updatedCoffee/${params.id}`)
                 
             },
             {
                 path:'/coffeeDetails/:id',
                 element: <CoffeeDetails></CoffeeDetails>,
-                loader: ({params}) => fetch(`http://localhost:5000/coffeeDetails/${params.id}`)
+                loader: ({params}) => fetch(`https://coffee-store-server-practice-bseffra3o-romans-projects-caf8547b.vercel.app/coffeeDetails/${params.id}`)
 
             },
             {
