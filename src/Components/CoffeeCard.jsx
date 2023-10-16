@@ -52,9 +52,9 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
 };
 
 CoffeeCard.propTypes = {
-    coffee: PropTypes.array,
-    coffees: PropTypes.object,
-    setCoffees: PropTypes.function,
+    coffee: PropTypes.object,
+    coffees: PropTypes.array,
+    setCoffees: PropTypes.func,
 
 }
 

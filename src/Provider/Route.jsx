@@ -5,6 +5,7 @@ import AddCoffee from '../Components/AddCoffee';
 import UpdateCoffee from '../Components/UpdateCoffee';
 import ErrorPage from '../Components/ErrorPage';
 import CoffeeDetails from '../Components/CoffeeDetails';
+import Login from '../Components/Login';
 
 const myCreatedRoute = createBrowserRouter([
     {
@@ -32,7 +33,13 @@ const myCreatedRoute = createBrowserRouter([
                 element: <CoffeeDetails></CoffeeDetails>,
                 loader: ({params}) => fetch(`http://localhost:5000/coffeeDetails/${params.id}`)
 
-            }
+            },
+            {
+                path:'/login',
+                element: <Login></Login>
+
+            },
+
         ]
     },
 
