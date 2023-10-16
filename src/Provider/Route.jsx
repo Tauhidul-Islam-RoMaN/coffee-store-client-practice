@@ -30,7 +30,7 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path:'/coffeeDetails/:id',
                 element: <CoffeeDetails></CoffeeDetails>,
-                loader: ({params}) => fetch(`http://localhost:5000/coffee/${params.id}`)
+                loader: ({params}) => fetch(`http://localhost:5000/coffeeDetails/${params.id}`)
 
             }
         ]

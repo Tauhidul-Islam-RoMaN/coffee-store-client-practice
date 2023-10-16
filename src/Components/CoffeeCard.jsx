@@ -3,6 +3,8 @@ import remove from '../assets/images/delete1.svg'
 import eye from '../assets/images/eye.svg'
 import frame from '../assets/images/frame.svg'
 import Swal from 'sweetalert2';
+import PropTypes from 'prop-types';
+
 
 const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
     const { name, chef, price, photo, _id } = coffee
@@ -40,7 +42,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
             </div>
             <div className='flex gap-4 flex-col'>
                 <Link to={`/coffeeDetails/${_id}`}><img className='bg-[#D2B48C] w-11 p-2 text-white' src={eye} alt="" /></Link>
-                <Link to={`/updateCoffee/${coffee._id}`}><img className='bg-[#3C393B] w-11 p-2 text-white' src={frame} alt="" /></Link>
+                <Link to={`/updateCoffee/${_id}`}><img className='bg-[#3C393B] w-11 p-2 text-white' src={frame} alt="" /></Link>
                 <button onClick={() => handleRemove(_id)} type="submit"><img className='bg-[#EA4744] w-11 p-2 text-white' src={remove} alt="" /></button>
             </div>
 
@@ -48,5 +50,12 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
         </div>
     );
 };
+
+CoffeeCard.propTypes = {
+    coffee: PropTypes.array,
+    coffees: PropTypes.object,
+    setCoffees: PropTypes.function,
+
+}
 
 export default CoffeeCard;
