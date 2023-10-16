@@ -6,7 +6,7 @@ import logo1 from '../assets/images/more/logo1.png'
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col items-center mx-auto text-center bg-cover bg-[url('src/assets/images/more/13.jpg')]  dark:bg-neutral-600 lg:text-left">
+        <footer className="flex flex-col items-center mx-auto text-center bg-cover bg-[url('https://i.postimg.cc/9FL12MzK/13.jpg')]  dark:bg-neutral-600 lg:text-left">
             <div className="container p-6 text-neutral-800  dark:text-neutral-200">
                 <img src={logo1} className='w-20 flex mx-auto lg:mx-0 ' alt="" />
                 <div className="grid gap-4 mt-4 mb-12 lg:grid-cols-2">
@@ -49,7 +49,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="w-full text-white p-4 text-center text-lg font-Rancho bg-[url('src/assets/images/more/8.png')] dark:text-neutral-200">
+            <div className="w-full text-white p-4 text-center text-lg font-Rancho bg-[url('https://i.postimg.cc/zf21R5dc/8.png')] dark:text-neutral-200">
                 <div className="col-start-1 row-start-1 bg-black bg-opacity-90 w-full h-full"></div>
                 <div className="col-start-1 row-start-1">
                     <p>Copyright Espresso Emporium ! All Rights Reserved</p>

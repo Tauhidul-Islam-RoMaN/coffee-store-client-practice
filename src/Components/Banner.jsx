@@ -5,7 +5,7 @@ import icon4 from '../assets/images/icons/4.png'
 const Banner = () => {
     return (
         <>
-            <div className=" flex lg:h-[640px] md:h-[365px] h-[180px] bg-no-repeat bg-contain bg-[url('src/assets/images/more/3.png')]">
+            <div className=" flex lg:h-[640px] md:h-[365px] h-[180px] bg-no-repeat bg-contain bg-[url('https://i.postimg.cc/MpDwq11x/3.png')]">
                 <div className="flex-1">   </div>
                 <div className="md:flex-1 md:w-20 lg:pr-20 ml-1 md:pt-10 pt-2 md:pr-5 lg:mt-40 text-white">
                     <h2 className="lg:text-5xl md:text-4xl text-lg font-Rancho mb-6">Would you like a Cup of Delicious Coffee?</h2>
