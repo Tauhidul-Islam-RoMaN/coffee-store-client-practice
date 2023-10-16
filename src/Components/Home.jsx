@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import { BsCup } from 'react-icons/bs';
 import Rectangle9 from '../assets/images/cups/Rectangle 9.png'
@@ -9,8 +9,15 @@ import Rectangle13 from '../assets/images/cups/Rectangle 13.png'
 import Rectangle14 from '../assets/images/cups/Rectangle 14.png'
 import Rectangle15 from '../assets/images/cups/Rectangle 15.png'
 import Rectangle16 from '../assets/images/cups/Rectangle 16.png'
+import CoffeeCard from "./CoffeeCard";
+import { useState } from "react";
 
 const Home = () => {
+
+    const loadedCoffees = useLoaderData()
+    const [coffees, setCoffees] = useState(loadedCoffees)
+
+    console.log(coffees);
     return (
         <div>
             <Banner></Banner>
@@ -19,10 +26,12 @@ const Home = () => {
                     <div className="mx-auto text-center gap-2 flex mb-4  flex-col ">
                         <p className="text-xl text-[#1B1A1A] font-Raleway">--- Sip & Savor ---</p>
                         <h2 className="text-[#331A15] font-Rancho mb-3 text-3xl md:text-6xl">Our Popular Products</h2>
-                        <button className="btn bg-[#E3B577] flex items-center mx-auto  gap-3">Add Coffee <span className="text-xl"> <BsCup></BsCup> </span> </button>
+                        <Link to='/addCoffee'><button className="btn bg-[#E3B577] flex items-center mx-auto  mb-10 gap-3">Add Coffee <span className="text-xl"> <BsCup></BsCup> </span> </button></Link>
                     </div>
-                    <div>
-                        
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-16">
+                        {
+                            coffees.map(coffee => <CoffeeCard key={coffee?._id} coffees={coffees} setCoffees={setCoffees} coffee={coffee}></CoffeeCard>)
+                        }
                     </div>
 
                 </div>

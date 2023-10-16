@@ -1,6 +1,7 @@
 import { IoIosCall } from 'react-icons/io';
 import { HiMail } from 'react-icons/hi';
 import { ImLocation2 } from 'react-icons/im';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import logo1 from '../assets/images/more/logo1.png'
 
 const Footer = () => {
@@ -11,13 +12,13 @@ const Footer = () => {
                 <div className="grid gap-4 mt-4 mb-12 lg:grid-cols-2">
                     <div className="mb-6 md:mb-0">
                         <div className='mx-auto md:mx-0'>
-                            <h5 className="mb-4 md:text-5xl text-3xl  font-Rancho">Espresso Emporium</h5>
+                            <h5 className="mb-4 md:text-5xl text-3xl  font-Rancho"> Espresso Emporium</h5>
 
                             <p className="mb-4 md:mx-10 lg:mx-0 font-Raleway">
                                 Always ready to be your friend. Come & Contact with us to share your memorable moments, to share with your best companion.
                             </p>
-                            <div>
-
+                            <div className='flex text-5xl py-5 gap-4'>
+                                <FaFacebook> </FaFacebook> <FaTwitter></FaTwitter> <FaInstagram></FaInstagram> <FaLinkedin></FaLinkedin>
                             </div>
                             <p className="mb-10 md:text-5xl text-3xl font-Rancho">
                                 Get in Touch
